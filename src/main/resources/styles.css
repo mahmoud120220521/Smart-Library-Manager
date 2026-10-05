@@ -1,0 +1,169 @@
+/* Enhanced Table Styles */
+.enhanced-table {
+    -fx-table-cell-border-color: #e3eafc;
+    -fx-table-header-border-color: #377dce;
+    -fx-background-color: #f8fbff;
+}
+.enhanced-table .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #377dce, #e3eafc);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.enhanced-table .table-row-cell:odd {
+    -fx-background-color: #eaf6fb;
+}
+.enhanced-table .table-row-cell:even {
+    -fx-background-color: #f8fbff;
+}
+.enhanced-table .table-row-cell:selected {
+    -fx-background-color: #b3d1f7;
+    -fx-text-fill: #222e3a;
+}
+.root {
+    /* ...existing code... */
+    -fx-min-width: 320px;
+    -fx-min-height: 480px;
+        /* Removed unsupported 100vw/100vh for JavaFX 8 compatibility */
+    -fx-overflow-x: auto;
+    -fx-overflow-y: auto;
+}
+.vbox, .hbox {
+    /* ...existing code... */
+    -fx-max-width: 100%;
+    -fx-wrap-text: true;
+}
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-pref-height: 400px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+/* Modern root styling with a clean background and font */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #e3eafc, #f8fbff 80%, #eaf6fb);
+    -fx-font-size: 15px;
+    -fx-padding: 0;
+}
+
+/* Label styling with better contrast and spacing */
+.label {
+    -fx-font-size: 17px;
+    -fx-text-fill: #222e3a;
+    -fx-font-weight: 600;
+    -fx-padding: 7px 0 7px 0;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.08), 2, 0, 0, 1);
+}
+
+/* Button styling with modern look, hover effects, and transitions */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Secondary button style for "Back to Dashboard" */
+.button.secondary {
+    -fx-background-color: #7f8c8d;
+}
+
+.button.secondary:hover {
+    -fx-background-color: #6c7a89;
+}
+
+/* Input fields (TextField, PasswordField, ComboBox) with modern styling */
+.text-field, .password-field, .combo-box {
+    -fx-pref-width: 300px;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 1);
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2px;
+}
+
+/* DatePicker specific styling */
+.date-picker .text-field {
+    -fx-pref-width: 300px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 0 5px 5px 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* TableView styling with modern look */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-pref-height: 400px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 5px 5px 0 0;
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: #dcdcdc;
+    -fx-text-fill: #2c3e50;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e6f0fa;
+}
+
+/* VBox and HBox spacing for better layout */
+.vbox, .hbox {
+    -fx-spacing: 15px;
+    -fx-padding: 20px;
+}
+
+/* GridPane specific styling */
+.grid-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0, 0, 2);
+}
+
+/* Centered content with subtle shadow */
